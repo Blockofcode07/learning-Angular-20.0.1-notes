@@ -1,0 +1,94 @@
++---------------------------+
+|Basic Definition of Angular|
++---------------------------+
+
+- Angular is a TypeScript-based front-end web application framework developed by Google.
+- It is used to build single-page applications (SPAs) that are dynamic, fast, and responsive.
+
+
+
++-------------------------------+
+|Angular Notes & Topics with Use|
++-------------------------------+
+
++---------------------------------------------------------------------------------------------------------------------------+
+|  No.   |    Topic Name                       |  Use / Description                                                         |
+| ------ | ----------------------------------- | -------------------------------------------------------------------------- |
+| 1.     |   Angular CLI (`ng`)                | Tool to create, run, build, and test Angular apps easily.                  |
+| 2.     |   Components                        | Building blocks of UI. Every visual element is a component.                |
+| 3.     |   Modules                           | Organizes code into functional blocks. App always has a root module.       |
+| 4.     |   Templates (HTML)                  | Defines UI layout of a component using Angular syntax.                     |
+| 5.     |   Data Binding                      | Connects component logic to UI. Types: `{{}}`, `[]`, `()`, `[()]`.         |
+| 6.     |   Directives                        | Modify DOM behavior. Example: ` ngIf`, ` ngFor`, custom directives.        |
+| 7.     |   Services & Dependency Injection   | Share logic (like API calls) across components; use via DI.                |
+| 8.     |   Routing                           | Helps navigate between pages in SPA using `RouterModule`.                  |
+| 9.     |   Lifecycle Hooks                   | Special methods like `ngOnInit()` to tap into component lifecycle.         |
+| 10.    |   Pipes                             | Transform data in templates. Example: `date`, `uppercase`, `custom pipes`. |
+| 11.    |   Forms (Template & Reactive)       | Handle user input with validation. Reactive forms give more control.       |
+| 12.    |   HTTPClient                        | Used to make API/HTTP calls. Part of `@angular/common/http`.               |
+| 13.    |   Observables & RxJS                | Handle async operations like HTTP calls and user input streams.            |
+| 14.    |   Build & Deployment                | `ng build` to create a production-ready version.                           |
+| 15.    |   Testing (Unit & E2E)              | `ng test`, `ng e2e` for writing and running tests.                         |
++---------------------------------------------------------------------------------------------------------------------------+
+
+
+1. Project Setup
+================
+
++---------------------------------------------------------------------------+
+| Command               | Description                                       |
+| --------------------- | ------------------------------------------------- |
+| `ng new project-name` | Creates a new Angular project with initial setup. |
+| `cd project-name`     | Enters the project folder.                        |
+| `ng serve`            | Runs the app locally on `http://localhost:4200/`. |
++---------------------------------------------------------------------------+
+
+2. Generate Code
+================
+
++--------------------------------------------------------------------------------------------------------+
+| Command                                                           | Description                        |
+| ----------------------------------------------------------------- | ---------------------------------- |
+| `ng generate component component-name` or `ng g c component-name` | Creates a new component.           |
+| `ng generate service service-name` or `ng g s service-name`       | Creates a new service.             |
+| `ng generate module module-name` or `ng g m module-name`          | Creates a new module.              |
+| `ng generate directive directive-name`                            | Creates a directive.               |
+| `ng generate pipe pipe-name`                                      | Creates a pipe.                    |
+| `ng generate class class-name`                                    | Creates a simple TypeScript class. |
+| `ng generate interface interface-name`                            | Creates a TypeScript interface.    |
++--------------------------------------------------------------------------------------------------------+
+
+3. Testing and Linting
+======================
++-------------------------------------------------------------------+
+| Command   | Description                                           |
+| --------- | ----------------------------------------------------- |
+| `ng test` | Runs unit tests using Karma.                          |
+| `ng lint` | Lints the code to check for style and quality issues. |
++-------------------------------------------------------------------+
+
+4. Build & Deploy
+=================
+
++------------------------------------------------------------------------------------------------------------------------------+
+| Command            | Description                                                                                             |
+| ------------------ | ------------------------------------------------------------------------------------------------------- |
+| `ng build`         | Builds the app for production in the `dist/` folder.                                                    |
+| `ng build --watch` | Builds and watches for file changes.                                                                    |
+| `ng build --prod`  | Optimizes the build for production. (Note: deprecated in Angular 16+, use `--configuration production`) |
++------------------------------------------------------------------------------------------------------------------------------+
+
+
+5. Other Helpful Commands
+=========================
+
++---------------------------------------------------------------------------------------------------------+
+| Command               | Description                                                                     |
+| --------------------- | ------------------------------------------------------------------------------- |
+| `ng version`          | Shows Angular CLI, Node, and package versions.                                  |
+| `ng help`             | Lists all available Angular CLI commands.                                       |
+| `ng update`           | Updates Angular and dependencies.                                               |
+| `ng add library-name` | Installs and configures 3rd-party libraries (e.g., `ng add @angular/material`). |
++---------------------------------------------------------------------------------------------------------+
+
+THANK YOU FOR FOLLOWING THE BASIC NOTES!! :)
